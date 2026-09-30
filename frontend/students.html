@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Student Management System</h1>
+
+        <!-- Student Form -->
+        <div class="form-container">
+
+            <h2>Add Student</h2>
+
+            <form id="studentForm">
+
+                <input type="text" id="studentId" placeholder="Student ID" required>
+
+                <input type="text" id="name" placeholder="Student Name" required>
+
+                <input type="number" id="age" placeholder="Age" required>
+
+                <input type="text" id="department" placeholder="Department" required>
+
+                <input type="email" id="email" placeholder="Email" required>
+
+                <input type="number" id="cgpa" placeholder="CGPA" step="0.1" min="0" max="10" required>
+
+                <input type="text" id="skills" placeholder="Skills (Java, MongoDB)" required>
+
+                <button type="submit">
+                    Add Student
+                </button>
+
+            </form>
+
+        </div>
+
+        <!-- Student Records -->
+        <div class="table-container">
+
+            <div class="table-header">
+                <h2>Student Records</h2>
+
+                <button onclick="loadStudents()">
+                    Refresh
+                </button>
+            </div>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Student ID</th>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Department</th>
+                        <th>Email</th>
+                        <th>CGPA</th>
+                        <th>Skills</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody id="studentTableBody">
+                    <!-- Students will appear here -->
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

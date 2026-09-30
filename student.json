@@ -1,0 +1,9 @@
+{
+  "studentId": "STU101",
+  "name": "Sarankrishna",
+  "age": 21,
+  "department": "AI&DS",
+  "email": "saran@gmail.com",
+  "cgpa": 8.5,
+  "skills": ["Java", "MongoDB"]
+}
